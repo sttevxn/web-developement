@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributos GLobales</title>
+
+    <style>
+        .parrafo-1{
+            color: red  
+        }
+        .parrafo-2{
+            color:blue
+        }
+        .parrafo-3{
+            color:green
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>Atributos en Desarrollo Web</h1>
+    </header>
+    <main>
+        <article>
+            <h2>Atributos Globales disponibles en HTML</h2>
+            <div>
+                <p>La lista de atributos es extensa, pero se destacan los siguientes:<br>1- <b>CLass</b>: <br> Este atributo se lo utiliza para dar estilo mediante <b>CSS</b> haciendo uso de la etiqueta <b>style</b>. </p>
+                <p class="parrafo-1">Este es un parrafo color rojo</p>
+                <p class="parrafo-2">Este es un parrafo color azul</p>
+                <p class="parrafo-3">Este es un parrafo color verde</p>
+            </div>
+            <div>
+                2- <b>ID</b>:<br> Es un identificador de JavaScript. Se declara el atributo dentro de, en este caso, un parrafo("< p >") y luego se usa la etiqueta <b>script</b> para realizar la identificacion.
+
+                <p id="IdentifiedPharagraph">Este es un parrafo identificado</p>
+                <p id="IdentifiedPharagraph-2">Este es es el segundo parrafo identificado</p>
+                <p id="IdentifiedPharagraph-3">Este es el ultimo parrafo identificado</p>
+                <script>
+                    const p = document.getElementById("IdentifiedPharagraph")
+                    
+                    const p2 = document.getElementById("IdentifiedPharagraph-2")
+                    
+                    const p3 = document.getElementById("IdentifiedPharagraph-3")
+
+                    console.log(p.textContent)
+                    console.log(p2.textContent)
+                    console.log(p3.textContent)
+                </script>
+
+            </div>
+            <div>
+                3- <b>Title</b>: <br> Es un atributo cuya funcionalidad es dar una <b>descripcion</b> del elemento que se esta seleccionando. La informacion que se muestra de manera emergente se denomina <b><i>Tooltip</i></b>.
+                <p title="numero de celular">1162623846</p>
+                <p title="Nombre del Usuario">Steven Tomas Villalba</p>
+                <p title="Edad del Usuario">18 años</p>
+            </div>
+            <div>
+                4- <b>Data-</b>: <br> Este es otro atributo relacionado con <b>JavaScript</b> que nos permite algun valor que deseemos de nuestra etiqueta de HTML. Primero se realiza una identificacion con la etiqueta <b>ID</b> y luego se realiza la operacion con la etiqueta <b>data</b>
+                <p id="IdentifiedPharagraph-4" data-ejemplo="datos de ejemplo">Parrafo de ejemplo para DATA</p>
+                <p id="IdentifiedPharagraph-5" data-numero="1162623846">Este parrafo contiene el numero telefonico del user</p>
+                <p id="IdentifiedPharagraph-6" data-edad="21 años">Este parrafo contiene la edad del user</p>
+                <p id="IdentifiedPharagraph-7" data-nombre="Steven Tomas Villalba">Este parrafo contiene el nombre del user</p>
+                <script>
+                    const p4 = document.getElementById("IdentifiedPharagraph-4")
+
+                    const p5 = document.getElementById("IdentifiedPharagraph-5")
+
+                    const p6 = document.getElementById("IdentifiedPharagraph-6")
+
+                    const p7 = document.getElementById("IdentifiedPharagraph-7")
+
+                    console.log(p4.dataset.ejemplo)
+                    console.log(p5.dataset.numero)
+                    console.log(p6.dataset.edad)
+                    console.log(p7.dataset.nombre)
+                </script>
+            </div>
+        </article>
+    </main>
+    <footer></footer>
+</body>
+</html>

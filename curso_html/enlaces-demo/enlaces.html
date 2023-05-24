@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enlaces</title>
+</head>
+<body>
+    <header>
+        <h1><u>Enlaces de HTML (links)</u></h1>
+    </header> 
+    <main>
+        <article>
+            <h2>¿Que son los enlaces?</h2>
+            <div>
+                Son conocidos popularmente como <b><i>Links</i>
+                </b> y tienen como objetivo <b>conectar una o mas paginas web</b>.<br> Tienen como atributo obligatorio <b>href</b>, donde se especifica la ruta del sitio o recurso al que se desea llegar. <br>
+
+                <a href="contacto.html">ir a contacto</a>
+
+            </div>
+            <h2> <u>Rutas absolutas y rutas relativas</u> </h2>
+            <h3>-Rutas <b>absolutas</b></h3>
+            <div>
+                Tienen un protocolo, ya sea <b>HTPPS</b> o <b>HTTP</b> y son usadas para direccionarnos a <b>rutas externas</b>. Por ejemplo, enlaces a Google o YouTube. <br> Es <b>obligatorio</b> usar <b>protocolos</b> (HTTP o HTTPS) dentro del atributo <i>href</i> para que el navegador reconozca que deseamos dirigirnos hacia un enlace externo y no a un archivo o recurso local. <br>
+
+                <a href="https://google.com">Ir a Google</a> <br>
+                <a href="https://youtube.com">Ir a YouTube</a> <br>
+
+            </div>
+            <h3>-Rutas <b>relativas</b></h3>
+            <div>
+                No usan protocolo ya que se aplican para la navegacion entre recursos o archivos <b>internos</b>, Por lo tanto, no usan protocolo. <br> Si deseamos dirigirnos a un recurso que se encuentra en un nivel mas alto que el contexto donde nos encontramos, se debe usar <b>/+nombre del archivo</b> dentro del atributo <i>href</i>. <br>Si en cambio debemos dirigirnos hacia el <b>archivo raiz</b>, solo usaremos <b>/</b>. <br><b>IMPORTANTE:</b> El archivo raiz o principal <b>SIEMPRE</b> debe ser llamado <b>INDEX</b>, para que el navegador reconozca que se habla del archivo raiz. <br>
+
+
+                <a href="contacto.html">ir a contacto</a> <br>
+                <a href="/index.html">ir a inicio</a> <br>
+
+            </div>
+            <h2> <u>Atributos de los enlaces</u></h2>
+            <h3>-Target</h3>
+            <div>
+                EL atributo Target posee dos variantes: "_self" y "_blank".: <br>
+                1- _blank: Modifica el comportamiento del enlace, haciendo que se abra en una <b>pestaña nueva</b>. Es el atributo mas usado respecto a las rutas absolutas. <br>
+
+                <a href="https://youtube.com" target="_blank">Ir a youtube</a> <br>
+                2- _self: Es el comportamientopor defecto de los enlaces, haciendo que el enlace se abra en la pestaña en que nos encontremos. <br>
+
+                <a href="https://youtube.com" target="_self">ir a youtube</a>
+
+            </div>
+            <h3> -Download</h3>
+            <div>
+                Se presenta como un atributo booleano ya que no requiere un valor. Su funcionalidad se basa en la descarga del recurso que se encuentre en el enlace. Es importante saber que dicho recurso debe encontrarse en nuestro servidor y nuestro HTML.
+                El siguiente ejemplo se usa una ruta relativa y se descarga un archivo que se encuentra en nuestro servidor. <br>
+                
+                <a href="contacto.html" download>descargar archivo de contacto</a> <br>
+
+                <a href="assets/images/boca.jpg" download>descargar cuadro del mas grande</a>
+
+            </div>
+        </article>
+    </main>
+    <footer></footer>
+</body>
+</html>

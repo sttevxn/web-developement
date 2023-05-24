@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos de Linea I</title>
+</head>
+<body>
+    <header>
+        <h1>Elementos de linea</h1>
+    </header>
+    <main>
+        <article>
+            <h2>¿Que son los elementos de linea?</h2>
+            <section>
+                <h3>Definicion</h3>
+                <p>
+                    Son aquellos elementos que ocupan unicamente el mismo espacio que el contenido del mismo.
+                </p>
+                <p>
+                    Algunas etiquetas que se clasifican como <b>elementos de linea</b> son: <br> em (emphasis) <br> strong(mas enfasis) <br> small(menos enfasis que el txt normal) <br> br(forzar un salto de linea) <br> wbr(salto de linea si hiciera falta) <br> time(contenido de tiempo) <br> i(fuente italica) <br> b(negrita) <br> u(subrayado).
+                </p>
+            </section>
+            <section>
+                <h3>Etiqueta "em"</h3>
+                <p>
+                    Le dice al navegador qué parte del texto tiene mas importancia
+                </p>
+                <h4>Ejemplo:</h4>
+                <p>
+                    "El <em>dinero</em> es importante pero la salud lo es mas"
+                </p>
+                <p>
+                    En la frase anterior, "dinero" tiene un valor mas alto que el resto de la frase.
+                </p>
+            </section>
+            <section>
+                <h3>Etiqueta "strong"</h3>
+                <p>
+                    Al igual que la anterior etiqueta, <i>strong</i> le da enfasis a algun elemento que este contenga, siendo mayor el enfasis que la etiqueta "em".
+                </p>
+                <h4>Ejemplo</h4>
+                <p>
+                    "El <em>dinero</em> es importante pero <strong>la salud</strong> lo es mas"
+                </p>
+                <p>
+                    Se contempla que "la salud", tiene un enfasis mayor que "dinero"
+                </p>
+            </section>
+            <section>
+                <h3>Etiqueta "small"</h3>
+                <p>
+                    Al contrario que las etiquetas ya mencionadas, <i>small</i> causa que lo que se encuentre dentro de ella, cobre menos relevancia que el texto sin enfatizar.
+                </p>
+                <h4>Ejemplo</h4>
+                <p>
+                    "El <em>dinero</em> es importante pero <strong>la salud</strong> lo es mas". <small>Frase adaptada de Jose L. Borges</small>
+                </p>
+            </section>
+            <section>
+                <h3>Etiqueta "br"</h3>
+                <p>
+                    Es sumamente util en situaciones que se deban realizar <strong>saltos de linea</strong>. La etiqueta debe ser colocada al final del elemento donde se desea ejecutar el salto de linea.
+                </p>
+                <h4>Ejemplo:</h4>
+                <h5>Texto sin salto de linea aplicado:</h5>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non magnam totam obcaecati dignissimos nostrum maxime consectetur doloremque ea consequuntur eveniet fugit nihil impedit animi at tempore, optio amet praesentium molestias.
+                </p>
+                <h5>Texto <strong>con salto de linea aplicado:</strong></h5>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br> Quos deserunt distinctio, vero consectetur architecto ipsam provident nemo neque totam! <br> Similique amet, aliquid eveniet iste voluptatibus nobis facere rem pariatur dolorem?
+                </p>
+                <p>
+                    Es importante tener en cuenta que <strong>no se debe usar "br"</strong> para generar espacios en blanco en el documento.
+                </p>
+            </section>
+            <section>
+                <h3>Etiqueta "wbr"</h3>
+                <p>
+                    Cumple la misma funcion que la etiqueta "br", pero con la diferencia que el navegador <strong>forzara un salto de linea solo cuando sea necesario.</strong> Esto normalmente se dá cuando el espacio es reducido y en el documento se encuentran elementos "largos" (por ejemplo, una URL)
+                </p>
+                <h4>Ejemplo:</h4>
+                <p>aaaaaaaaaaa/<wbr>bbbbbbbbbbb/<wbr>ccccccccccccccccc/<wbr>dddddddddddddd/<wbr>eeeeeeeeeeee/<wbr>ffffffffffffffff/<wbr>gggggggggggggggggg/<wbr>hhhhhhhhhhh</p>
+            </section>
+            <section>
+                <h3>Etiquetas de Superíndice y Subíndice (sup/sub)</h3>
+                <h4>sup</h4>
+                <p>
+                    Es utilizada cuando se desea marcar un superindice, por ejemplo, una potencia matemática. Se usa encerrando al objeto a remarcar.
+                </p>
+                <h4>Ejemplo:</h4>
+                <p>
+                    2<sup>2</sup>=4
+                </p>
+                <h4>sub</h4>
+                <p>
+                    Si en algun caso es necesario trabajar con Subindices, se hará uso de la etiqueta <i>sub</i> aplicandose el mismo metodo que la etiqueta sup
+                </p>
+                <h4>Ejemplo:</h4>
+                <p>
+                    "La formula quimica del agua es <b>H<sub>2</sub>O </b>"
+                </p>
+            </section>
+        </article>
+    </main>
+    <footer>Curso de HTML 2023</footer>
+</body>
+</html>

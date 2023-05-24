@@ -1,0 +1,65 @@
+<!--
+    Section: Agrupa contenido que esta relacionado con el tema principal para mantener la logica del contenido de la página web
+
+    Article: Representa contenido INDEPENDIENTE, que podemos verlo en cualquier lugar, y aun asi mantiene sentido. ATENCION; Deben tener su propio header y footer
+
+    Aside: Representa contenido relacionado pero no forma parte del contenido principal
+
+    En este documento se usará a Section para "encerrar" Articles
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content and Sections II</title>
+</head>
+<body>
+    <header>
+        <h1>Noticias Nacionales</h1>
+    </header>
+    <main>
+        <section><!--Section siendo el que agrupa-->
+            <h2>Noticias del dia</h2>
+            <article><!--Articles dentro del section-->
+                <header><!--Article 1 con header-->
+                    <h3>Noticia 1</h3>
+                </header>
+                <p>
+                    En plena crisis cambiaria, la cúpula de JxC recibe a sus economistas para avanzar en un plan económico
+                </p>
+                <footer><!--Article 1 con footer-->
+                    <i>Fuente: www.lanacion.com.ar</i>
+                </footer>
+            </article>
+            <article>
+                <header>
+                    <h3>Noticia 2</h3>
+                </header>
+                <p>
+                    Quiniela Nacional y Provincial: resultados del sábado 29 de abril
+                </p>
+                <footer>
+                    <i>FUente: www.ambito.com</i>
+                </footer>
+            </article>
+            <article>
+                <header>
+                    <h3>Noticia 3</h3>
+                </header>
+                <p>
+                    Trágico accidente en Villa Gesell: un vehículo perdió el control sobre la arena y mató a un espectador
+                </p>
+                <footer>
+                    <i>Fuente: www.cronista.com</i>
+                </footer>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <i>Noticias Diarias. Todos los derechos reservados</i> 
+    </footer>
+</body>
+</html>

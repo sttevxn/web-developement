@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1><u>Listas de HTML</u></h1>
+    <nav>
+        <ul>
+            <li><a href="#1">Definicion
+            <li><a href="#2">Tiṕos de listas</a></li>
+                <ul>
+                    <li><a href="#3">Unordered List</a></li>
+                    <li><a href="#4">Ordered List</a></li>
+                </ul>
+            </a></li>
+            <li><a href="#5">Definition List</a></li>
+            <li><a href="#6">Listas Anidadas</a></li>
+        </ul>
+    </nav>
+    <article>
+        <h2 id="1">¿Que son las listas?</h2>
+        <p>Las listas son herramientas que nos ofrece HTML para <b>listar elementos</b></p>.En funcion de necesidades e importancia, existe 3 tipos de listas.
+    </article>
+    <article>
+        <h2 id="2">Tipos de listas: </h2>
+        <h3 id="3">1- <b><i>Unordered list</i></b></h3>
+        <p>Son utilizadas cuando el orden de los elementos no ifluye por ejemplo,<i> una lista de compras</i> </p>
+        <h4><u>Semantica:</u></h4>
+        <p>Para hacer uso de las UL, se usan las etiquetas "ul", y dentro de la misma se enlistaran los elenentos de se desean haciendo uso, para cada ítem, de la etiqueta "li".</p>
+        <ul>
+            <li>
+                <p><a href="/enlaces-demo/navegacion-con-anclas/blog.html#post1">Noticia 1</a></p>
+            </li>
+            <li>
+                <p><a href="/enlaces-demo/navegacion-con-anclas/blog.html#post2">Noticia 2</a></p>
+            </li>
+            <li>
+                <p><a href="/enlaces-demo/navegacion-con-anclas/blog.html#post3">Noticia 3</a></p>
+            </li>
+            <li>
+                <p><a href="/enlaces-demo/navegacion-con-anclas/blog.html#post4">Noticia 4</a></p>
+            </li>
+            <li>
+                <p><a href="/enlaces-demo/navegacion-con-anclas/blog.html#post5">Noticia 5</a></p>
+            </li>
+        </ul>
+    </article>
+    <article>
+    <h3 id="4">2-<b><i>Ordered list</i></b></h3>
+        <p>Contrariamente al caso anterior, el orden de los elementos influyen y tienen importancia, por ejemplo <i>un top 10 global</i></p>
+        <h4><u>Semantica: </u></h4>
+        <p>Para hacer uso de las UL, se usan las etiquetas "ol", y dentro de la misma se enlistaran los elenentos de se desean haciendo uso, para cada ítem, de la etiqueta "li".</p>
+        <h4>EJemplo</h4>
+        <h5>Pasos para aprender Diseño Web:</h5>
+        <ol>
+            <li>Fundamentos de HTML</li>
+            <li>Disoño con CSS</li>
+            <LI>Fundamentos de Javascript</LI>
+        </ol>
+    </article>
+    <article>
+        <h3 id="5">3- <b><i>Definition List</i></b></h3>
+        <p>Son utilizadas para hacer una <b>lista de definiciones</b>, por ejemplo, un <i>diccionario.</i></p>
+        <h4><u>Semantica: </u></h4>
+        <p>La semantica de las listas de definicion se compone por dos etiquetas: "dt" (definition term) y "dd" (definition descriptionj)</p>
+        <h4>EJemplo</h4>
+        <H5>Significado de los cuadros de futbol en Argentina</H5>
+        <dl>
+            <dt>CABJ</dt>
+            <dd>Club Atletico Boca Juniors</dd>
+            <dt>CARP</dt>
+            <dd>Club Atletico River Plate</dd>
+            <dt>QAC</dt>
+            <dd>Quilmes Atletico Club</dd>
+        </dl>
+    </article>
+    <article>
+        <h2 id="6"><u>Listas Anidadas:</u></h2>
+        <p>Las listas vistas anteriormente tienen la capacidad de ser anidadas entre si segun se necesite dicho comportamiento. Dando una imagen jerarquica de los contenidos enlistados.</p>
+        <h4>Ejemplo:</h4>
+        <h5>Materias de Ingenieria en Informatica (UNAJ)</h5>
+        <ol>
+            <li>Primer año:
+                <ul>
+                    <li>Taller de ingenieria</li>
+                    <li>Sistemas de Representacion</li>
+                    <li>Matematica inicial</li>
+                </ul>
+            </li>
+            <li>
+                Segundo año:
+                <ul>
+                    <li>Ingles</li>
+                    <li>Base de datos</li>
+                    <li>ALgoritmos</li>
+                </ul>
+            </li>
+            <li>Tercer año:
+                <ul>
+                    <li>Sistemas Operativos</li>
+                    <li>Arquitectura de Computadores</li>
+                </ul>
+            </li>
+        </ol>
+    </article>
+</body>
+</html>
