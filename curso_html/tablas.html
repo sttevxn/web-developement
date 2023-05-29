@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduccion a las Tablas</title>
+    <style>
+        td{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tablas</h1>
+    <article>
+        <h2>Definicion</h2>
+        <p>Las tablas en HTML sirven para mostrar contenido estructurado.</p>
+        <h2>Semantica</h2>
+        <p>La semantica basica de una tabla se compone de:</p>
+        <ul type="circle">
+            <li>table: Etiqueta que encierra una tabla</li>
+            <li>tr: Table Row. Etiqueta que construye una <b>fila</b>.</li>
+            <li>td: Table Data. Etiqueta que construye una <b>celda</b>.</li>
+        </ul>
+    </article>
+    <article>
+        <h2>Construccion de una Tabla</h2>
+        <h3>Estrucutura base:</h3>
+
+        <p>Para construir una tabla, se da el primer paso con la etiqueta <b>table</b>, dentro de la misma, se iniciará la etiqueta <b>tr</b>, la cual indica el inicio de una fila. Para dar contenido a las celdas de la misma, se usara la etiqueta <b>td</b> por cada celda.</p>
+
+        <h3>Etiquetas adicionales</h3>
+        <ul>
+            <li>Titulo: Se usan mediante la etiqueta <b>caption</b>, y se colocan justo despues de la etiqueta table.</li>
+            <li>Cabeceras: Se establecen con la etiqueta <b>thead</b> y en vez de usar las <b>td</b>, usaremos la etiqueta <b>th</b> por cada celda a definir.
+            <ul>
+                <li>Cuerpo de la tabla: Al definir una cabecera, damos por hecho que se debe distinguir cual el es cuerpo de la tabla. Para esto, se usa la etiqueta <b>tbody</b>.</li>
+            </ul>
+            </li>
+            <li>Pie de Tabla: Establece un pie o finalizacion para la tabla. Se usa la etiqueta <b>tfoot</b>.</li>
+        </ul>
+        <h3>Atributos</h3>
+        <p>Para que un elemento ocupe mas de una fila o mas de una columna, tenemos disponibles 2 atributos:</p>
+        <ul>
+            <li><b>colspan</b>: Permite que la celda ocupe mas columnas que la asignada. El valor por defecto es 1</li>
+            <li><b>rowspan</b>: Permite que la celda ocupe mas filas que la asignada. Cuando modificamos el valor, las celdas ocuparan espacio moviendose hacia <b>abajo</b>, por eso es necesario que se elimine la celda que sobrará para evitar que la tabla se "rompa". El valor por defecto es 1</li>
+        </ul>
+        <table>
+            <caption>Horario de Clases</caption>
+            <thead>
+                <th></th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miercoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+            </thead>
+            <tbody>
+            <tr>
+                <td>9:00 - 10:00</td>
+                <td>Matematicas</td>
+                <td>Lengua</td>
+                <td>Sociales</td>
+                <td>Naturales</td>
+                <td>Ed. Fisica</td>
+            </tr>
+            <tr>
+                <td>10:00 - 11:00</td>
+                <td rowspan="2">Lengua</tdrow>
+                <td>Sociales</td>
+                <td>Matematicas</td>
+                <td>Naturales</td>
+                <td>Lengua</td>
+            </tr>
+            <tr>
+                <td>11:00 - 12:00</td>
+                <td>Naturales</td>
+                <td>Sociales</td>
+                <td>Ed. Fisica</td>
+                <td>Matematicas</td>
+            </tr>
+            <td>12:00 - 12:30 </td>
+            <td colspan="5">Recreo</td>
+            <tr>
+                <td>12:30 - 13:00</td>
+                <td>Matematicas</td>
+                <td>Lengua</td>
+                <td>Ed. Fisica</td>
+                <td>Sociales</td>
+                <td rowspan="2">Naturales</td>
+            </tr>
+            <tr>
+                <td>13:00 - 14:00</td>
+                <td>Naturales</td>
+                <td>Sociales</td>
+                <td>Lengua</td>
+                <td>Matematicas</td>
+            </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="5">Total de materias</td>
+                    <td>12</td>
+                </tr>
+            </tfoot>
+        </table>
+    </article>
+</body>
+</html>
